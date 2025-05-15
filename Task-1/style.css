@@ -1,0 +1,35 @@
+body {
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+p {
+  font-size: 18px;
+  color: #34495e;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#unique-image {
+  width: 500px;
+  height: auto;
+}
