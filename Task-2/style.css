@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+input, button {
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+@media (min-width: 600px) {
+  form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
