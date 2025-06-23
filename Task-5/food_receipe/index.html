@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<div id="loading" class="loading-overlay">
+  <div class="spinner"></div>
+</div>
+
+<body>
+  <div class="container">
+    <h1>🍲Recipe Finder</h1>
+
+    <!-- Search Section -->
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="Search recipes..." />
+      <select id="dietFilter">
+        <option value="">All</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="gluten-free">Gluten-Free</option>
+      </select>
+      <button onclick="searchRecipes()">Search</button>
+    </div>
+
+    <!-- Add New Dish Form -->
+    <h2 style="color: white;">Add a New Dish</h2>
+    <form id="addRecipeForm" onsubmit="addNewRecipe(event)">
+      <input type="text" id="newTitle" placeholder="Title" required />
+      <input type="text" id="newImage" placeholder="Image URL" required />
+      <select id="newDiet" required>
+        <option value="">Select Diet</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="gluten-free">Gluten-Free</option>
+        <option value="non-veg">Non-Veg</option>
+      </select>
+      <textarea id="newDesc" placeholder="Description" required></textarea>
+      <button type="submit">Add Dish</button>
+    </form>
+
+    <!-- Recipe Display Section -->
+    <div id="recipeList" class="recipe-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
